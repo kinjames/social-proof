@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 70px auto;
+    padding: 20px;
+
+}
+
+h1 {
+    font-size: 45px;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    height: 100vh;
+}
+
+.small-text {
+    line-height: 20px;
+    font-size: 14px;
+    color: hsl(303, 10%, 53%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.star-text {
+    font-weight: bold;
+    color: hsl(300, 43%, 22%);
+}
+
+.text-img{
+    width: 30%;
+}
+
+.img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img1,.img2,.img3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: hsl(300, 24%, 96%);
+    width: 65%;
+    border-radius: 5px;
+}
+
+.img2 {
+    margin-left: 40px;
+}
+
+.img3{
+    margin-left: 80px;
+}
+
+.card-section{
+    display: flex;
+    gap: 35px;
+}
+.card {
+    width: 28%;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: hsl(300, 43%, 22%);
+    color: #fff;
+    height: 100%;
+}
+
+.post {
+    color: hsl(333, 80%, 67%);
+    font-size: 14px;
+}
+
+.names p {
+    line-height: 20px;
+}
+
+.name-job {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.reviews {
+    line-height: 20px;
+}
+.card2 {
+    margin-top: 20px;
+}
+
+.card3 {
+    margin-top: 40px;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 16px;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width:600px) {
+    .container,main,body,.card,.text-img,.img {
+        width: 100%;
+    }
+
+    .card-section{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .header {
+        flex-direction: column;
+        margin: unset;
+        gap: 20px;
+    }
+
+    .card2,.card3 {
+        margin: unset;
+    }
+
+    .img1,.img2,.img3 {
+        flex-direction: column;
+        margin: unset;
+        width: 100%;
+    }
+}
